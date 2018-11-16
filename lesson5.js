@@ -60,12 +60,21 @@
 				//return valuesOfArray;
 		//}
 //}
+function getValues(myObject) {
+				return Object.values(myObject);
+		}
 
-//function getValues(obj) {
-		//const valuesOfArray = [];
+
+//function getKeys(obj) {
+		//const keysOfObj = [];
 		//for (let key in obj) {
-				//valuesOfArray.push(obj[key]);
-		//} return valuesOfArray;
+				//keysOfObj.push(key);
+		//} return keysOfObj;
+//}
+//
+//function getValues(obj) {
+		//const valuesOfObj = Object.values(obj);
+		//return valuesOfObj;
 //}
 
 
