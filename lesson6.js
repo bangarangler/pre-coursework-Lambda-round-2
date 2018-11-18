@@ -151,9 +151,9 @@ const stepsToWorldDomination = new HtmlElement('ol');
 stepsToWorldDomination.addID('world-domination');
 const childElement1 = new HtmlElement('li', 'Discover the secret to prime factorization');
 const childElement2 = new HtmlElement('li', 'Hack through online banking security');
-chileElement2.addClass('illegal');
+childElement2.addClass('illegal');
 const childElement3 = new HtmlElement('li', 'Blackmail all the major global leaders');
-chileElement3.addClass('illegal');
+childElement3.addClass('illegal');
 const childElement4 = new HtmlElement('li', 'World domination');
 stepsToWorldDomination.addChild(childElement1);
 stepsToWorldDomination.addChild(childElement2);
@@ -169,6 +169,24 @@ stepsToWorldDomination.addChild(childElement4);
 // //          and you called element.removeClass('inline'), afterward
 // //          element.chasses would be equal to ['important']
 //
+HtmlElement.prototype.removeClass = function(className) {
+		    const classIndex = this.classes.indexOf(className);
+		       this.classes.splice(classIndex,1);
+		       };
+//HtmlElement.prototype.removeClass = function(remove) {
+			//var newClassName = "";
+			//var i;
+			//var classes = this.className.split(" ");
+			//for(i = 0; i < classes.length; i++) {
+							//if(classes[i] !== remove) {
+												//newClassName += classes[i] + " ";
+											//}
+						//}
+			//this.className = newClassName;
+//};
+
+//HtmlElement.prototype.removeClass = function(className) {
+		//if (H
 
 
 //HtmlElement.prototype.removeClass = function(className) {
